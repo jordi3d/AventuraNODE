@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>La teva aventura</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="mef.js">
+        //Inclou el codi de l'utòmat fet en JS
+    </script>
+    <script>
+        let caminet = [];
+
+        function check_sn(str) {
+            while (true) {
+                let cont2 = prompt(`${str}[s/n]`).toLowerCase();
+                if (cont2 !== "s" && cont2 !== "n") alert("Respon amb s/n");
+                else return cont2;
+            }
+        }
+
+        function fesLogin() {
+            let field1 = document.getElementById("fotIn").getAttribute("src");
+            let field2 = document.getElementById("nomIn");
+            let field3 = document.getElementById("cognomIn");
+            document
+                .getElementById("fotIn")
+                .setAttribute("src", foto.value.split("\\").pop());
+            document.getElementById("nomIn").innerHTML = nom.value;
+            document.getElementById("cognomIn").innerHTML = cognom.value;
+            document.getElementById("credencials").style.visibility = "hidden";
+            document.getElementById("tot").style.opacity = "1";
+
+            estatAutomat.emit("engega"); //engega l'autòmat
+        }
+    </script>
+</head>
+
+<body>
+    <!--header-->
+    <div id="credencials">
+        <form>
+            <label><strong>LOGIN</strong></label
+        ><br /><br />
+        <label for="nom">Nom:</label><br />
+            <input type="text" id="nom" name="nom" placeholder="Nom" /><br />
+            <label for="cognom">Cognom:</label><br />
+            <input type="text" id="cognom" name="cognom" placeholder="Cognom" /><br />
+            <label for="foto">Foto:</label><br />
+            <input type="file" id="foto" name="foto" /><br /><br />
+        </form>
+        <button onclick="javascript:fesLogin()" style="width: 22em; height: 3em">
+        Confirmar
+      </button>
+    </div>
+    <!--/header>
+    <section-->
+    <div id="tot">
+        <div id="nomjoc">
+            <h1>Escull la teva pr&ograve;pia aventura!</h1>
+        </div>
+        <div id="pagina">
+            <p id="missatge_estat">Comencem</p>
+        </div>
+        <div id="usuari">
+            <img id="fotIn" src="https://via.placeholder.com/80" />
+            <div id="nomIn">...</div>
+            <div id="cognomIn">...</div>
+        </div>
+        <div id="cami">
+            <p id="caminet">Camí recorregut</p>
+        </div>
+        <div id="botons">
+            <button onclick="javascript:check_sn('s')" id="botosi">SI</button>
+            <button onclick="javascript:check_sn('n')" id="botono">NO</button>
+        </div>
+    </div>
+    <!--/section-->
+    <footer>
+        <div style="position: absolute; top: 100%; left: 36.5%">
+            &copy; 2022 Jordi Alonso
+        </div>
+    </footer>
+</body>
+
+</html>

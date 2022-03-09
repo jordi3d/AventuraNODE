@@ -1,0 +1,105 @@
+body {
+    max-width: 30em;
+    margin: 0 auto;
+    font-family: arial;
+}
+
+#credencials {
+    position: absolute;
+    background: lightgray;
+    padding: 2em;
+    margin-left: 5%;
+    top: 30%;
+    width: 296px;
+    height: 200px;
+    z-index: 1;
+    visibility: visible;
+}
+
+#nomjoc {
+    position: absolute;
+    width: 538px;
+    height: 47px;
+    top: -60px;
+}
+
+#tot {
+    position: absolute;
+    opacity: 0.1;
+    left: 25%;
+    margin-top: 12%;
+}
+
+#pagina {
+    position: absolute;
+    background-color: coral;
+    padding: 2em;
+    margin-left: 4%;
+    font-size: x-large;
+    width: 320px;
+    height: 200px;
+}
+
+#usuari {
+    position: absolute;
+    background-color: gray;
+    font-size: large;
+    width: 168px;
+    height: 152px;
+    left: 426px;
+}
+
+#fotIn {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 80px;
+    width: 80px;
+}
+
+#nomIn {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 98px;
+    width: 148px;
+}
+
+#cognomIn {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 121px;
+    width: 148px;
+}
+
+#cami {
+    position: absolute;
+    background-color: gray;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: x-small;
+    width: 148px;
+    height: 115px;
+    left: 426px;
+    top: 161px;
+}
+
+#botons {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 305px;
+    width: 416px;
+    height: 38px;
+    visibility: hidden;
+}
+
+#botosi {
+    position: absolute;
+    margin-left: 0px;
+    padding: 10px 50px;
+}
+
+#botono {
+    position: absolute;
+    margin-left: 291px;
+    padding: 10px 50px;
+}
